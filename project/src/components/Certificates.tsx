@@ -1,5 +1,5 @@
 import React from "react";
-import frontendCertificateImg from "../assets/frontend-certificate.png";
+//import frontendCertificateImg from "../assets/frontend-certificate.png";
 import { ExternalLink, Award } from "lucide-react";
 
 const Certificates = () => {
@@ -8,7 +8,8 @@ const Certificates = () => {
       title: "Programming Fundamentals",
       issuer: "Udacity",
 
-      image: frontendCertificateImg,
+      image:
+        "https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg",
       verificationLink:
         "https://www.udacity.com/certificate/e/4e0181be-7fc3-11ef-9552-0b8f594e770a",
       date: "2024",
