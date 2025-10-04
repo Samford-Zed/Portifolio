@@ -32,7 +32,7 @@ const About = () => {
                 </div>
                 <div className='flex items-center gap-3'>
                   <GraduationCap className='text-yellow-600' size={20} />
-                  <span className='text-gray-700'>CS Student</span>
+                  <span className='text-gray-700'>CSE Student</span>
                 </div>
                 <div className='flex items-center gap-3'>
                   <Code className='text-yellow-600' size={20} />

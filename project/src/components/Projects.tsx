@@ -31,7 +31,7 @@ const Projects = () => {
         "A collaborative task management application with real-time updates and team collaboration features.",
       image:
         "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      technologies: ["React", "Firebase", "Material-UI", "Redux"],
+      technologies: ["React", "Spring Boot", "Material-UI"],
       githubLink: "https://github.com/Samford-Zed/To-Do-List",
       liveLink: "https://task-manager-demo.netlify.app",
       category: "Full Stack",
@@ -42,7 +42,7 @@ const Projects = () => {
         "A modern, responsive hospital management system for efficient patient care.",
       image:
         "https://verge-ai.com/wp-content/uploads/2023/05/Ushering-in-a-New-Era-of-Healthcare.webp",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      technologies: ["React", "TypeScript", "Tailwind CSS"],
       githubLink: "https://github.com/Samford-Zed/Hospital-Management-System",
       liveLink: "https://hospital-management-system-demo.netlify.app",
       category: "Frontend",
@@ -101,7 +101,7 @@ const Projects = () => {
                       <Github size={16} />
                       Code
                     </a>
-                    <a
+                    {/* <a
                       href={project.liveLink}
                       target='_blank'
                       rel='noopener noreferrer'
@@ -109,7 +109,7 @@ const Projects = () => {
                     >
                       <Monitor size={16} />
                       Live Demo
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
