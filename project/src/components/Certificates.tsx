@@ -36,8 +36,7 @@ const Certificates = () => {
     {
       title: "Spring Boot ",
       issuer: "amigoscode",
-      image:
-        "https://cdn.educba.com/academy/wp-content/uploads/2022/05/spring-boot-hibernate.jpg",
+      image: "https://wallpaperaccess.com/full/9954252.jpg",
       verificationLink:
         "https://amigoscode.com/certificates/710805da-3cf2-47e8-9170-a409910e533b",
       date: "2025",
