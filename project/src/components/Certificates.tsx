@@ -1,5 +1,5 @@
 import React from "react";
-//import frontendCertificateImg from "../assets/frontend-certificate.png";
+//import frontendCertificateImg from "../assets/frontend-certificate.png";.....
 import { ExternalLink, Award } from "lucide-react";
 
 const Certificates = () => {
