@@ -1,9 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
+// ✅ Vercel-friendly Vite config
 export default defineConfig({
-  base: "/Portifolio/",
   plugins: [react()],
   optimizeDeps: {
     exclude: ["lucide-react"],
