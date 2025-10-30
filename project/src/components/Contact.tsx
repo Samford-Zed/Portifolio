@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// To enable email sending, install emailjs-com:
-// npm install emailjs-com
+
 import emailjs from "emailjs-com";
 import {
   Mail,
