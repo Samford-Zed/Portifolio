@@ -24,7 +24,7 @@ const Certificates = () => {
       date: "2024",
     },
     {
-      title: "Java for Beginners",
+      title: "Java Programming Masterclass",
       issuer: "amigoscode",
 
       image:

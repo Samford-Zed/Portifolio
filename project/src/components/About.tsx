@@ -13,10 +13,10 @@ const About = () => {
           <div className='grid md:grid-cols-2 gap-12 items-center'>
             <div className='space-y-6'>
               <p className='text-lg text-gray-600 leading-relaxed'>
-                I'm a passionate Full Stack Developer and Computer Science and Engineering
-                student based in Ethiopia. I love creating beautiful, functional
-                web experiences that solve real-world problems and make a
-                positive impact on users' lives.
+                I'm a passionate Full Stack Developer and Computer Science and
+                Engineering student based in Ethiopia. I love creating
+                beautiful, functional web experiences that solve real-world
+                problems and make a positive impact on users' lives.
               </p>
 
               <p className='text-lg text-gray-600 leading-relaxed'>

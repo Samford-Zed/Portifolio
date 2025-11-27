@@ -5,8 +5,28 @@ import { ChevronDown, Download } from "lucide-react";
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
+
+  // resolves to the bundled PDF so it works in dev and in the built site
+  const cvUrl = new URL("../assets/cv.pdf", import.meta.url).href;
+
+  const downloadCV = async () => {
+    try {
+      const res = await fetch(cvUrl);
+      if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Samford_Zed_CV.pdf";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      // fallback: open in new tab so user can save manually
+      window.open(cvUrl, "_blank", "noopener,noreferrer");
     }
   };
 
@@ -22,7 +42,7 @@ const Hero = () => {
               Hi, I'm <span className='text-yellow-600'>Samuel</span> Zenebe
             </h1>
             <p className='text-xl lg:text-2xl text-gray-600 mb-8'>
-              Full-Stack Developer & Computer Science Student
+              Full-Stack Developer & Computer Science and Engineering Student
             </p>
             <p className='text-lg text-gray-500 mb-8 max-w-2xl'>
               Building modern, responsive, and meaningful web experiences with
@@ -35,12 +55,17 @@ const Hero = () => {
               >
                 View My Work
               </button>
-              {/*<button className='flex items-center justify-center gap-2 border-2 border-yellow-600 text-yellow-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-200'>
+
+              <button
+                onClick={downloadCV}
+                className='flex items-center justify-center gap-2 border-2 border-yellow-600 text-yellow-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-200'
+              >
                 <Download size={20} />
                 Download CV
-              </button>*/}
+              </button>
             </div>
           </div>
+
           <div className='lg:w-1/2 flex justify-center'>
             <div className='relative'>
               <div className='w-80 h-80 bg-gradient-to-br from-yellow-400 to-green-400 rounded-full opacity-20 absolute -top-4 -left-4'></div>
@@ -54,6 +79,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
         <div className='flex justify-center mt-16'>
           <button
             onClick={() => scrollToSection("about")}

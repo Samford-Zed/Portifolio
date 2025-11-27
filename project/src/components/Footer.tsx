@@ -3,10 +3,8 @@ import { Github, Linkedin, MessageCircle, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    const el = document.getElementById(sectionId);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
