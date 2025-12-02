@@ -106,7 +106,7 @@ const Footer = () => {
               © 2025 Samuel Zenebe. All rights reserved.
             </p>
             {/*<p className='text-gray-400 text-sm flex items-center gap-2 mt-4 md:mt-0'>
-              Made with <Heart className='text-red-500' size={16} /> in Ethio
+              Made with <Heart className='text-red-500' size={16} /> in 
             </p>*/}
           </div>
         </div>
