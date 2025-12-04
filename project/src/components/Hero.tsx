@@ -8,7 +8,7 @@ const Hero = () => {
     if (element) element.scrollIntoView({ behavior: "smooth" });
   };
 
-  // resolves to the bundled PDF so it works in dev and in the built site
+  // resolves to the bundled PDF so it works in dev and in the built 
   const cvUrl = new URL("../assets/cv.pdf", import.meta.url).href;
 
   const downloadCV = async () => {
