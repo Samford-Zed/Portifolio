@@ -32,8 +32,8 @@ const Projects = () => {
       image:
         "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       technologies: ["React", "Spring Boot", "Material-UI"],
-      githubLink: "https://github.com/Samford-Zed/To-Do-List",
-      liveLink: "https://task-manager-demo.netlify.app",
+      githubLink: "https://github.com/Samford-Zed/smartprep-ethiopia",
+      liveLink: "https://smartprep-ethiopia.vercel.app/",
       category: "Full Stack",
     },
     {
@@ -101,7 +101,7 @@ const Projects = () => {
                       <Github size={16} />
                       Code
                     </a>
-                    {/* <a
+                    <a
                       href={project.liveLink}
                       target='_blank'
                       rel='noopener noreferrer'
@@ -109,7 +109,7 @@ const Projects = () => {
                     >
                       <Monitor size={16} />
                       Live Demo
-                    </a> */}
+                    </a> 
                   </div>
                 </div>
               </div>
