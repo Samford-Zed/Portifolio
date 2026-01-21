@@ -28,7 +28,7 @@ const Projects = () => {
     {
       title: "Smartprep Ethiopia",
       description:
-        "SmartPrep Ethiopia personalizes students’ study plans using advanced AI, helping them prepare smarter for Ethiopian national and entrance exams.",
+        "AI-powered personalized exam preparation for Ethiopian students.",
       image:
         "https://image.freepik.com/free-photo/e-learning-student-university-concept_31965-3013.jpg",
       technologies: ["React", "Spring Boot", "Material-UI"],
