@@ -26,11 +26,11 @@ const Projects = () => {
       category: "Full Stack",
     },
     {
-      title: "Task Management App",
+      title: "Smartprep Ethiopia",
       description:
-        "A collaborative task management application with real-time updates and team collaboration features.",
+        "SmartPrep Ethiopia personalizes students’ study plans using advanced AI, helping them prepare smarter for Ethiopian national and entrance exams.",
       image:
-        "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://image.freepik.com/free-photo/e-learning-student-university-concept_31965-3013.jpg",
       technologies: ["React", "Spring Boot", "Material-UI"],
       githubLink: "https://github.com/Samford-Zed/smartprep-ethiopia",
       liveLink: "https://smartprep-ethiopia.vercel.app/",
