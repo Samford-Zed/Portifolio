@@ -22,7 +22,7 @@ const Projects = () => {
         "https://newgensoft.com/wp-content/uploads/2024/09/Loan-Management-System.jpg",
       technologies: ["React", "Spring Boot", "Tailwind CSS", "PostgreSQL"],
       githubLink: "https://github.com/Samford-Zed/Loan-Management-System",
-      liveLink: "https://loan-management-system-demo.netlify.app",
+      liveLink: "https://loan-management-system-cx5a.vercel.app/",
       category: "Full Stack",
     },
     {
